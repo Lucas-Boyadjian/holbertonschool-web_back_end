@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+
+"""
+This module provides a function to return the sum
+of a list of floats, with type annotations.
+"""
 from typing import List
 
 

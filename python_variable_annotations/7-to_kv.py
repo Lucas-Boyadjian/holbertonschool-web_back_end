@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+
+"""
+This module provides a function to return a tuple with a string
+and the square of a number as a float, with type annotations.
+"""
 from typing import Union
 from typing import Tuple
 

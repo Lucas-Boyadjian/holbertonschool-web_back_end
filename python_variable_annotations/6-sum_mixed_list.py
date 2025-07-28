@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+
+"""
+This module provides a function to return
+the sum of a list containing integers and floats, with type annotations.
+"""
 from typing import List
 from typing import Union
 

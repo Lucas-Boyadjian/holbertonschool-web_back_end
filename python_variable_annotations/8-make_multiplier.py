@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+
+"""
+This module provides a function to return a multiplier
+function for floats, with type annotations.
+"""
 from typing import Callable
 
 
