@@ -4,7 +4,8 @@ This module provides a helper function for calculating
 start and end indexes for pagination.
 """
 
-from typing import Tuple 
+from typing import Tuple
+
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     start_index = (page - 1) * page_size
