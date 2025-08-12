@@ -5,7 +5,7 @@ Module for simple pagination of a CSV dataset.
 
 import csv
 import math
-from typing import List, Tuple
+from typing import List, Tuple, Dict
 
 
 def index_range(page: int, page_size: int) -> tuple:
@@ -68,7 +68,7 @@ class Server:
 
         return self.dataset()[start_index:end_index]
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """
         Returns a dictionary with pagination information:
         - page_size: Number of items per page
