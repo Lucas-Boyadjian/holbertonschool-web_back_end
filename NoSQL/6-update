@@ -1,1 +1,3 @@
-// Script that adds a new attribute to a document in the collection school.
+// Script to add a new attribute "address" to all documents in the "school" collection
+// where the name="Holberton school".
+db.school.update({name: "Holberton school"}, {$set:{address: "972 Mission street"}}, {multi: true})
