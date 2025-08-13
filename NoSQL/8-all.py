@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Module that defines a function to list all documents in a MongoDB collection.
+Module that defines a function to list all
+documents in a MongoDB collection.
 """
 
 
