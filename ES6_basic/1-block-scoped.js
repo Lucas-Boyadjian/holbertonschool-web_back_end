@@ -3,8 +3,7 @@ export default function taskBlock(trueOrFalse) {
   var task2 = true;
   
   if (trueOrFalse) {
-    let task = true;
-    let task2 = false;
+    // Variables are not overwritten in this block.
   }
 
   return [task, task2];
