@@ -1,10 +1,11 @@
 export default function createReportObject(employeesList) {
 
-    allEmployees: {
-        engineering: [
-            'John Doe',
-            'Guillaume Salva',
-        ],
-        getNumberOfDepartments()
+  let departmentNames = Object.keys(employeesList);
+
+  return {
+    allEmployees: employeesList,
+    getNumberOfDepartments() {
+      return Object.keys(employeesList).length;
     },
-};
+  };
+}
