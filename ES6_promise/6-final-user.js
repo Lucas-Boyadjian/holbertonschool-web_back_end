@@ -6,7 +6,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     signUpUser(firstName, lastName), 
     uploadPhoto(fileName)
   ])
-  .then((resultsArray) => results.map((result) => {
+  .then((results) => results.map((result) => {
     let value;
     if (result.status === 'fulfilled') {
       value = result.value;
@@ -15,7 +15,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     }
     return {
       status: result.status,
-      value: result.value,
+      value: value,
     };
   }));
 }
