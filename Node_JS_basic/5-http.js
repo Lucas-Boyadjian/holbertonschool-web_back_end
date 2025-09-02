@@ -9,16 +9,24 @@ const app = http.createServer((req, res) => {
   }
   if (req.url === '/students') {
     const databasePath = process.argv[2];
+    const originalLog = console.log;
+    let output = '';
+    console.log = (msg) => { output += `${msg}\n`; };
+
+    res.write('This is the list of our students\n');
 
     countStudents(databasePath)
-      .then((data) => {
-        res.end(`This is the list of our students\n${data}`);
+      .then(() => {
+        console.log = originalLog;
+        res.end(output.trim());
       })
       .catch(() => {
-        res.end('This is the list of our students\nCannot load the database');
+        console.log = originalLog;
+        res.end('Cannot load the database');
       });
   }
 });
+
 app.listen(1245);
 
 module.exports = app;
