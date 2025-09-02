@@ -2,13 +2,15 @@ const fs = require('fs');
 
 function countStudents(path) {
   try {
-    const data = fs.readFileSync(path);
+    const data = fs.readFileSync(path, 'utf8');
     const lines = data.split('\n').slice(1).filter((line) => line !== '');
 
-    const students = lines.map((line) => {
-      const parts = line.split(',');
-      return { firstname: parts[0], field: parts[parts.length - 1] };
-    });
+    const students = lines
+      .map((line) => {
+        const parts = line.split(',');
+        return { firstname: parts[0], field: parts[parts.length - 1] };
+      })
+      .filter((student) => student.firstname && student.field);
 
     const studentsByField = {};
     students.forEach(({ firstname, field }) => {
