@@ -21,12 +21,12 @@ function countStudents(path) {
           studentsByField[field].push(firstname);
         });
 
-        const result = `Number of students: ${students.length}\n`;
+        let result = `Number of students: ${students.length}\n`;
 
         for (const fieldName in studentsByField) {
           if (studentsByField[fieldName]) {
             const listFirstnames = studentsByField[fieldName].join(', ');
-            console.log(`Number of students in ${fieldName}: ${studentsByField[fieldName].length}. List: ${listFirstnames}`);
+            result += `Number of students in ${fieldName}: ${studentsByField[fieldName].length}. List: ${listFirstnames}\n`;
           }
         }
         resolve(result.trim());
