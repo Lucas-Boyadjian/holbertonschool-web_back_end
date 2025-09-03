@@ -1,5 +1,4 @@
 const express = require('express');
-
 const app = express();
 const countStudents = require('./3-read_file_async');
 
@@ -12,6 +11,9 @@ app.get('/students', (req, res) => {
   countStudents(databaseCSV)
     .then((data) => {
       res.send(`This is the list of our students\n${data}`);
+    })
+    .catch(() => {
+      res.send('This is the list of our students\nCannot load the database');
     });
 });
 

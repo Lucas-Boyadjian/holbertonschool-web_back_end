@@ -19,7 +19,12 @@ const app = http.createServer((req, res) => {
       .then(() => {
         console.log = originalLog;
         res.end(output.trim());
+      })
+      .catch(() => {
+        console.log = originalLog;
+        res.end('Cannot load the database');
       });
+    return;
   }
 });
 
