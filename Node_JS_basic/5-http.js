@@ -8,25 +8,17 @@ const app = http.createServer((req, res) => {
     return;
   }
   if (req.url === '/students') {
-    const databasePath = process.argv[2];
-    const originalLog = console.log;
-    let output = '';
-    console.log = (msg) => { output += `${msg}\n`; };
-
-    res.write('This is the list of our students\n');
-
-    countStudents(databasePath)
-      .then(() => {
-        console.log = originalLog;
-        res.end(output.trim());
+    const dataBase = process.argv[2];
+    countStudents(dataBase)
+      .then((data) => {
+        res.end(`This is the list of our students\n${data}`);
       })
       .catch(() => {
-        console.log = originalLog;
         res.end('Cannot load the database');
       });
   }
 });
-
 app.listen(1245);
 
 module.exports = app;
+

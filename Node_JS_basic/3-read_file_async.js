@@ -21,15 +21,16 @@ function countStudents(path) {
           studentsByField[field].push(firstname);
         });
 
-        console.log(`Number of students: ${students.length}`);
+        let result = `Number of students: ${students.length}\n`;
 
         for (const fieldName in studentsByField) {
           if (studentsByField[fieldName]) {
             const listFirstnames = studentsByField[fieldName].join(', ');
-            console.log(`Number of students in ${fieldName}: ${studentsByField[fieldName].length}. List: ${listFirstnames}`);
+            result += `Number of students in ${fieldName}: ${studentsByField[fieldName].length}. List: ${listFirstnames}\n`;
           }
         }
-        resolve();
+        console.log(result.trim());  // Pour l'exercice 3 (affichage terminal)
+        resolve(result.trim());
       }
     });
   });
