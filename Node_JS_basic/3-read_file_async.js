@@ -29,7 +29,7 @@ function countStudents(path) {
             result += `Number of students in ${fieldName}: ${studentsByField[fieldName].length}. List: ${listFirstnames}\n`;
           }
         }
-        console.log(result.trim());  // Pour l'exercice 3 (affichage terminal)
+        console.log(result.trim()); // Pour l'exercice 3 (affichage terminal)
         resolve(result.trim());
       }
     });
