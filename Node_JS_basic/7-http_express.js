@@ -7,8 +7,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/students', (req, res) => {
-  res.write('This is the list of our students');
-  countStudents(dataBase)
+  const databaseCSV = process.argv[2];
+  countStudents(databaseCSV)
+    .then((data) => {
+      res.send(`This is the list of our students\n${data}`);
+    });
 });
 
 app.listen(1245);

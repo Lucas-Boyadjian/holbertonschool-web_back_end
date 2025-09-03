@@ -8,21 +8,17 @@ const app = http.createServer((req, res) => {
     return;
   }
   if (req.url === '/students') {
-    const databasePath = process.argv[2];
+    const databaseCSV = process.argv[2];
     const originalLog = console.log;
     let output = '';
     console.log = (msg) => { output += `${msg}\n`; };
 
     res.write('This is the list of our students\n');
 
-    countStudents(databasePath)
+    countStudents(databaseCSV)
       .then(() => {
         console.log = originalLog;
         res.end(output.trim());
-      })
-      .catch(() => {
-        console.log = originalLog;
-        res.end('Cannot load the database');
       });
   }
 });
