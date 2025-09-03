@@ -9,12 +9,20 @@ app.get('/', (req, res) => {
 
 app.get('/students', (req, res) => {
   const databaseCSV = process.argv[2];
+  const originalLog = console.log;
+  let output = '';
+  console.log = (msg) => { output += `${msg}\n`; };
+
+  res.write('This is the list of our students\n');
+
   countStudents(databaseCSV)
-    .then((data) => {
-      res.send(`This is the list of our students\n${data}`);
+    .then(() => {
+      console.log = originalLog;
+      res.end(output.trim());
     })
     .catch(() => {
-      res.send('Cannot load the database');
+      console.log = originalLog;
+      res.end('Cannot load the database');
     });
 });
 
