@@ -24,7 +24,6 @@ const app = http.createServer((req, res) => {
         console.log = originalLog;
         res.end('Cannot load the database');
       });
-    return;
   }
 });
 
