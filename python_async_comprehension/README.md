@@ -1,87 +1,88 @@
 # Python Async Comprehension
 
 ## Description
-Ce projet a pour objectif de vous initier à l'utilisation des générateurs asynchrones et des compréhensions asynchrones en Python. Vous apprendrez à créer des fonctions asynchrones, à utiliser des générateurs pour produire des données de manière asynchrone, et à mesurer les performances des tâches asynchrones.
+This project aims to introduce you to the use of asynchronous generators and asynchronous comprehensions in Python. You will learn how to create asynchronous functions, use generators to produce data asynchronously, and measure the performance of asynchronous tasks.
 
 ---
 
-## Table des matières
+## Table of Contents
 - [Description](#description)
-- [Prérequis](#prérequis)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Fonctionnalités](#fonctionnalités)
-- [Fichiers](#fichiers)
-- [Exécution](#exécution)
-- [Auteur](#auteur)
+- [Features](#features)
+- [Files](#files)
+- [Execution](#execution)
+- [Author](#author)
 
 ---
 
-## Prérequis
-Avant de commencer, assurez-vous d'avoir les outils suivants installés :
-- **Python 3.10** ou une version supérieure
-- **pip** pour installer les dépendances Python
-- Un éditeur de texte tel que **Visual Studio Code**
+## Prerequisites
+Before starting, make sure you have the following tools installed:
+- **Python 3.10** or higher
+- **pip** to install Python dependencies
+- A text editor such as **Visual Studio Code**
 
 ---
 
 ## Installation
-1. Clonez ce dépôt sur votre machine locale :
+1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/<votre-utilisateur>/holbertonschool-web_back_end.git
+   git clone https://github.com/<your-username>/holbertonschool-web_back_end.git
    ```
-2. Accédez au dossier du projet :
+2. Navigate to the project folder:
    ```bash
    cd holbertonschool-web_back_end/python_async_comprehension
    ```
-3. Installez les dépendances nécessaires (si applicable) :
+3. Install the required dependencies (if applicable):
    ```bash
    pip install -r requirements.txt
    ```
 
 ---
 
-## Fonctionnalités
-Ce projet couvre les concepts suivants :
-1. **Générateurs asynchrones** : Création de fonctions qui produisent des données de manière asynchrone.
-2. **Compréhensions asynchrones** : Utilisation de compréhensions pour collecter des données produites par des générateurs asynchrones.
-3. **Mesure des performances** : Calcul du temps d'exécution des tâches asynchrones.
+## Features
+This project covers the following concepts:
+1. **Asynchronous generators**: Creating functions that produce data asynchronously.
+2. **Asynchronous comprehensions**: Using comprehensions to collect data produced by asynchronous generators.
+3. **Performance measurement**: Calculating the runtime of asynchronous tasks.
 
 ---
 
-## Fichiers
-Voici une description des fichiers principaux du projet :
+## Files
+Here is a description of the main files in the project:
 
-| Fichier                        | Description                                                                 |
+| File                           | Description                                                                 |
 |--------------------------------|-----------------------------------------------------------------------------|
-| `0-async_generator.py`         | Implémente un générateur asynchrone qui produit des nombres aléatoires.     |
-| `1-async_comprehension.py`     | Utilise une compréhension asynchrone pour collecter les données du générateur. |
-| `2-measure_runtime.py`         | Mesure le temps d'exécution de plusieurs appels à une fonction asynchrone.  |
+| `0-async_generator.py`         | Implements an asynchronous generator that produces random numbers.          |
+| `1-async_comprehension.py`     | Uses an asynchronous comprehension to collect data from the generator.      |
+| `2-measure_runtime.py`         | Measures the runtime of multiple calls to an asynchronous function.         |
 
 ---
 
-## Exécution
-### **Exécuter un fichier Python**
-Pour exécuter un fichier Python, utilisez la commande suivante :
+## Execution
+### **Run a Python File**
+To execute a Python file, use the following command:
 ```bash
-python3 <nom-du-script>.py
+python3 <file-name>.py
 ```
 
-Exemple :
+Example:
 ```bash
 python3 0-main.py
 ```
 
-### **Description des scripts**
-1. **`0-async_generator.py`** :
-   - Produit 10 nombres aléatoires entre 0 et 10 avec un délai d'une seconde entre chaque.
-2. **`1-async_comprehension.py`** :
-   - Collecte les 10 nombres produits par le générateur asynchrone en utilisant une compréhension asynchrone.
-3. **`2-measure_runtime.py`** :
-   - Exécute la fonction de compréhension asynchrone 4 fois en parallèle et mesure le temps total d'exécution.
+### **Description of Scripts**
+1. **`0-async_generator.py`**:
+   - Produces 10 random numbers between 0 and 10 with a one-second delay between each.
+2. **`1-async_comprehension.py`**:
+   - Collects the 10 numbers produced by the asynchronous generator using an asynchronous comprehension.
+3. **`2-measure_runtime.py`**:
+   - Executes the asynchronous comprehension function 4 times in parallel and measures the total runtime.
 
 ---
 
-## Auteur
+## Author
 Lucas Boyadjian
 
 ---
+```

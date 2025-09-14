@@ -1,85 +1,86 @@
 # Pagination
 
 ## Description
-Ce projet a pour objectif de vous apprendre à implémenter des techniques de pagination en Python. La pagination est une méthode essentielle pour gérer et afficher de grandes quantités de données de manière efficace. Vous apprendrez à créer des fonctions pour la pagination simple, la pagination hypermédia, et à gérer des cas spécifiques comme la suppression de données.
+This project aims to teach you how to implement pagination techniques in Python. Pagination is an essential method for managing and displaying large amounts of data efficiently. You will learn how to create functions for simple pagination, hypermedia pagination, and handle specific cases like data deletion.
 
 ---
 
-## Table des matières
+## Table of Contents
 - [Description](#description)
-- [Prérequis](#prérequis)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Fonctionnalités](#fonctionnalités)
-- [Fichiers](#fichiers)
-- [Exécution](#exécution)
-- [Auteur](#auteur)
+- [Features](#features)
+- [Files](#files)
+- [Execution](#execution)
+- [Author](#author)
 
 ---
 
-## Prérequis
-Avant de commencer, assurez-vous d'avoir les outils suivants installés :
+## Prerequisites
+Before starting, make sure you have the following tools installed:
 - **Python 3.x**
-- **pip** pour installer les dépendances Python
-- Un éditeur de texte tel que **Visual Studio Code**
+- **pip** to install Python dependencies
+- A text editor such as **Visual Studio Code**
 
 ---
 
 ## Installation
-1. Clonez ce dépôt sur votre machine locale :
+1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/<votre-utilisateur>/holbertonschool-web_back_end.git
+   git clone https://github.com/<your-username>/holbertonschool-web_back_end.git
    ```
-2. Accédez au dossier du projet :
+2. Navigate to the project folder:
    ```bash
    cd holbertonschool-web_back_end/pagination
    ```
-3. Installez les dépendances nécessaires (si applicable) :
+3. Install the required dependencies (if applicable):
    ```bash
    pip install -r requirements.txt
    ```
 
 ---
 
-## Fonctionnalités
-Ce projet couvre les concepts suivants :
-1. **Pagination simple** : Implémentation d'une fonction pour diviser les données en pages.
-2. **Pagination hypermédia** : Ajout de métadonnées pour enrichir les réponses paginées.
-3. **Gestion des suppressions** : Gestion des cas où des données sont supprimées entre les requêtes.
-4. **Utilisation de fichiers CSV** : Lecture et manipulation de données à partir d'un fichier CSV.
+## Features
+This project covers the following concepts:
+1. **Simple pagination**: Implementation of a function to divide data into pages.
+2. **Hypermedia pagination**: Adding metadata to enrich paginated responses.
+3. **Handling deletions**: Managing cases where data is deleted between requests.
+4. **Using CSV files**: Reading and manipulating data from a CSV file.
 
 ---
 
-## Fichiers
-Voici une description des fichiers principaux du projet :
+## Files
+Here is a description of the main files in the project:
 
-| Fichier                              | Description                                                                 |
-|--------------------------------------|-----------------------------------------------------------------------------|
-| `0-simple_helper_function.py`        | Contient une fonction utilitaire pour calculer les index de pagination.     |
-| `1-simple_pagination.py`             | Implémente une pagination simple pour diviser les données en pages.         |
-| `2-hypermedia_pagination.py`         | Implémente une pagination avec des métadonnées hypermédia.                  |
-| `3-hypermedia_del_pagination.py`     | Gère la pagination avec suppression de données entre les requêtes.          |
-| `Popular_Baby_Names.csv`             | Fichier CSV contenant des données sur les prénoms populaires.               |
+| File                              | Description                                                                 |
+|-----------------------------------|-----------------------------------------------------------------------------|
+| `0-simple_helper_function.py`     | Contains a utility function to calculate pagination indices.                |
+| `1-simple_pagination.py`          | Implements simple pagination to divide data into pages.                     |
+| `2-hypermedia_pagination.py`      | Implements pagination with hypermedia metadata.                             |
+| `3-hypermedia_del_pagination.py`  | Handles pagination with data deletion between requests.                     |
+| `Popular_Baby_Names.csv`          | CSV file containing data on popular baby names.                             |
 
 ---
 
-## Exécution
-### **Exécuter un fichier Python**
-Pour exécuter un fichier Python, utilisez la commande suivante :
+## Execution
+### **Run a Python File**
+To execute a Python file, use the following command:
 ```bash
-python3 <nom-du-script>.py
+python3 <file-name>.py
 ```
 
-Exemple :
+Example:
 ```bash
 python3 1-main.py
 ```
 
-### **Données utilisées**
-Le fichier `Popular_Baby_Names.csv` est utilisé comme source de données pour les exemples de pagination. Assurez-vous qu'il est présent dans le dossier avant d'exécuter les scripts.
+### **Data Used**
+The file `Popular_Baby_Names.csv` is used as the data source for pagination examples. Ensure it is present in the folder before running the scripts.
 
 ---
 
-## Auteur
+## Author
 Lucas Boyadjian
 
 ---
+```

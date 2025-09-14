@@ -1,91 +1,92 @@
 # ES6 Classes
 
 ## Description
-Ce projet a pour objectif de vous familiariser avec les classes en JavaScript, introduites avec ECMAScript 6 (ES6). Vous apprendrez à créer des classes, des constructeurs, des méthodes, des propriétés statiques, des sous-classes, et à utiliser des concepts avancés comme l'héritage et le polymorphisme.
+This project aims to familiarize you with classes in JavaScript, introduced with ECMAScript 6 (ES6). You will learn how to create classes, constructors, methods, static properties, subclasses, and use advanced concepts such as inheritance and polymorphism.
 
 ---
 
-## Table des matières
+## Table of Contents
 - [Description](#description)
-- [Prérequis](#prérequis)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Fonctionnalités](#fonctionnalités)
-- [Fichiers](#fichiers)
-- [Exécution](#exécution)
-- [Auteur](#auteur)
+- [Features](#features)
+- [Files](#files)
+- [Execution](#execution)
+- [Author](#author)
 
 ---
 
-## Prérequis
-Avant de commencer, assurez-vous d'avoir les outils suivants installés :
-- **Node.js** (version 20.x.x ou supérieure)
-- **npm** (version 9.x.x ou supérieure)
-- Un éditeur de texte tel que **Visual Studio Code**
+## Prerequisites
+Before starting, make sure you have the following tools installed:
+- **Node.js** (version 20.x.x or higher)
+- **npm** (version 9.x.x or higher)
+- A text editor such as **Visual Studio Code**
 
 ---
 
 ## Installation
-1. Clonez ce dépôt sur votre machine locale :
+1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/<votre-utilisateur>/holbertonschool-web_back_end.git
+   git clone https://github.com/<your-username>/holbertonschool-web_back_end.git
    ```
-2. Accédez au dossier du projet :
+2. Navigate to the project folder:
    ```bash
    cd holbertonschool-web_back_end/ES6_classes
    ```
-3. Installez les dépendances nécessaires :
+3. Install the required dependencies:
    ```bash
    npm install
    ```
 
 ---
 
-## Fonctionnalités
-Ce projet couvre les concepts suivants :
-1. **Création de classes** avec `class`.
-2. **Constructeurs** pour initialiser les objets.
-3. **Méthodes d'instance** pour définir des comportements.
-4. **Propriétés statiques** pour des valeurs partagées entre toutes les instances.
-5. **Héritage** avec `extends` pour créer des sous-classes.
-6. **Polymorphisme** pour redéfinir des méthodes dans les sous-classes.
-7. **Utilisation des getters et setters** pour accéder et modifier les propriétés.
-8. **Gestion des erreurs** avec des classes personnalisées.
+## Features
+This project covers the following concepts:
+1. **Class creation** using `class`.
+2. **Constructors** to initialize objects.
+3. **Instance methods** to define behaviors.
+4. **Static properties** for values shared across all instances.
+5. **Inheritance** using `extends` to create subclasses.
+6. **Polymorphism** to override methods in subclasses.
+7. **Getters and setters** to access and modify properties.
+8. **Error handling** with custom classes.
 
 ---
 
-## Fichiers
-Voici une description des fichiers principaux du projet :
+## Files
+Here is a description of the main files in the project:
 
-| Fichier                        | Description                                                                 |
+| File                           | Description                                                                 |
 |--------------------------------|-----------------------------------------------------------------------------|
-| `0-classroom.js`               | Définition d'une classe `ClassRoom` avec un constructeur simple.            |
-| `1-make_classrooms.js`         | Création de plusieurs instances de la classe `ClassRoom`.                   |
-| `2-hbtn_course.js`             | Définition d'une classe `HolbertonCourse` avec des propriétés et des validations. |
-| `3-currency.js`                | Définition d'une classe `Currency` pour gérer les devises.                  |
-| `4-pricing.js`                 | Utilisation de la composition avec les classes `Pricing` et `Currency`.     |
-| `5-building.js`                | Définition d'une classe `Building` avec des méthodes abstraites.            |
-| `6-sky_high.js`                | Création d'une sous-classe `SkyHighBuilding` qui hérite de `Building`.       |
-| `7-airport.js`                 | Définition d'une classe `Airport` avec une méthode `toString`.              |
-| `8-hbtn_class.js`              | Définition d'une classe `HolbertonClass` avec des propriétés dynamiques.     |
-| `9-hoisting.js`                | Explication du hoisting avec les classes.                                   |
-| `10-car.js`                    | Définition d'une classe `Car` avec des propriétés et des méthodes avancées. |
+| `0-classroom.js`               | Defines a `ClassRoom` class with a simple constructor.                      |
+| `1-make_classrooms.js`         | Creates multiple instances of the `ClassRoom` class.                       |
+| `2-hbtn_course.js`             | Defines a `HolbertonCourse` class with properties and validations.          |
+| `3-currency.js`                | Defines a `Currency` class to manage currencies.                           |
+| `4-pricing.js`                 | Uses composition with `Pricing` and `Currency` classes.                    |
+| `5-building.js`                | Defines a `Building` class with abstract methods.                          |
+| `6-sky_high.js`                | Creates a `SkyHighBuilding` subclass inheriting from `Building`.           |
+| `7-airport.js`                 | Defines an `Airport` class with a `toString` method.                       |
+| `8-hbtn_class.js`              | Defines a `HolbertonClass` class with dynamic properties.                  |
+| `9-hoisting.js`                | Explains hoisting with classes.                                            |
+| `10-car.js`                    | Defines a `Car` class with advanced properties and methods.                |
 
 ---
 
-## Exécution
-Pour exécuter un fichier spécifique, utilisez la commande suivante :
+## Execution
+To execute a specific file, use the following command:
 ```bash
-node <nom-du-fichier>.js
+node <file-name>.js
 ```
 
-Exemple :
+Example:
 ```bash
 node 0-main.js
 ```
 
 ---
 
-## Auteur
+## Author
 Lucas Boyadjian
 
 ---
+```

@@ -1,118 +1,119 @@
 # Node.js Basics
 
 ## Description
-Ce projet a pour objectif de vous apprendre les bases de Node.js, une plateforme JavaScript côté serveur. Vous découvrirez comment exécuter du JavaScript avec Node.js, utiliser les modules, lire des fichiers, créer des serveurs HTTP simples et complexes, et organiser un serveur Express en plusieurs fichiers.
+This project aims to teach you the basics of Node.js, a JavaScript runtime built on Chrome's V8 engine. You will learn how to execute JavaScript with Node.js, use modules, read files, create simple and complex HTTP servers, and organize an Express server into multiple files.
 
 ---
 
-## Table des matières
+## Table of Contents
 - [Description](#description)
-- [Prérequis](#prérequis)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Fonctionnalités](#fonctionnalités)
-- [Fichiers](#fichiers)
-- [Exécution](#exécution)
-- [Auteur](#auteur)
+- [Features](#features)
+- [Files](#files)
+- [Execution](#execution)
+- [Author](#author)
 
 ---
 
-## Prérequis
-Avant de commencer, assurez-vous d'avoir les outils suivants installés :
-- **Node.js** (version 20.x.x ou supérieure)
-- **npm** (version 9.x.x ou supérieure)
-- Un éditeur de texte tel que **Visual Studio Code**
+## Prerequisites
+Before starting, make sure you have the following tools installed:
+- **Node.js** (version 20.x.x or higher)
+- **npm** (version 9.x.x or higher)
+- A text editor such as **Visual Studio Code**
 
 ---
 
 ## Installation
-1. Clonez ce dépôt sur votre machine locale :
+1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/<votre-utilisateur>/holbertonschool-web_back_end.git
+   git clone https://github.com/<your-username>/holbertonschool-web_back_end.git
    ```
-2. Accédez au dossier du projet :
+2. Navigate to the project folder:
    ```bash
    cd holbertonschool-web_back_end/Node_JS_basic
    ```
-3. Installez les dépendances nécessaires :
+3. Install the required dependencies:
    ```bash
    npm install
    ```
 
 ---
 
-## Fonctionnalités
-Ce projet couvre les concepts suivants :
-1. **Exécution de JavaScript avec Node.js**.
-2. **Utilisation des modules Node.js** pour structurer le code.
-3. **Lecture de fichiers** de manière synchrone et asynchrone.
-4. **Création de serveurs HTTP** avec le module `http`.
-5. **Création de serveurs HTTP avec Express.js** pour simplifier le développement.
-6. **Organisation d'un serveur Express** en plusieurs fichiers pour une meilleure maintenabilité.
+## Features
+This project covers the following concepts:
+1. **Executing JavaScript with Node.js**.
+2. **Using Node.js modules** to structure code.
+3. **Reading files** synchronously and asynchronously.
+4. **Creating HTTP servers** with the `http` module.
+5. **Creating HTTP servers with Express.js** to simplify development.
+6. **Organizing an Express server** into multiple files for better maintainability.
 
 ---
 
-## Fichiers
-Voici une description des fichiers principaux du projet :
+## Files
+Here is a description of the main files in the project:
 
-### **Fichiers principaux**
-| Fichier                        | Description                                                                 |
+### **Main Files**
+| File                           | Description                                                                 |
 |--------------------------------|-----------------------------------------------------------------------------|
-| `0-console.js`                 | Fonction pour afficher un message dans la console.                         |
-| `1-stdin.js`                   | Lecture de l'entrée utilisateur via `process.stdin`.                       |
-| `2-read_file.js`               | Lecture d'un fichier CSV de manière synchrone.                             |
-| `3-read_file_async.js`         | Lecture d'un fichier CSV de manière asynchrone avec Promises.               |
-| `4-http.js`                    | Création d'un serveur HTTP simple avec le module `http`.                   |
-| `5-http.js`                    | Serveur HTTP avec des routes pour afficher des données CSV.                |
-| `6-http_express.js`            | Serveur HTTP simple avec Express.js.                                       |
-| `7-http_express.js`            | Serveur HTTP complexe avec Express.js et des routes dynamiques.            |
+| `0-console.js`                 | Function to display a message in the console.                              |
+| `1-stdin.js`                   | Reads user input via `process.stdin`.                                       |
+| `2-read_file.js`               | Reads a CSV file synchronously.                                            |
+| `3-read_file_async.js`         | Reads a CSV file asynchronously using Promises.                            |
+| `4-http.js`                    | Creates a simple HTTP server using the `http` module.                      |
+| `5-http.js`                    | HTTP server with routes to display CSV data.                               |
+| `6-http_express.js`            | Simple HTTP server using Express.js.                                       |
+| `7-http_express.js`            | Complex HTTP server using Express.js with dynamic routes.                  |
 
-### **Dossier `full_server/`**
-| Fichier                        | Description                                                                 |
+### **`full_server/` Directory**
+| File                           | Description                                                                 |
 |--------------------------------|-----------------------------------------------------------------------------|
-| `server.js`                    | Point d'entrée du serveur Express.                                         |
-| `utils.js`                     | Contient la fonction `readDatabase` pour lire les fichiers CSV.            |
-| `controllers/AppController.js` | Contrôleur pour gérer la page d'accueil.                                   |
-| `controllers/StudentsController.js` | Contrôleur pour gérer les routes liées aux étudiants.                  |
-| `routes/index.js`              | Définit les routes pour le serveur Express.                                |
+| `server.js`                    | Entry point for the Express server.                                         |
+| `utils.js`                     | Contains the `readDatabase` function to read CSV files.                    |
+| `controllers/AppController.js` | Controller to handle the homepage.                                          |
+| `controllers/StudentsController.js` | Controller to handle student-related routes.                          |
+| `routes/index.js`              | Defines routes for the Express server.                                     |
 
-### **Autres fichiers**
-| Fichier                        | Description                                                                 |
+### **Other Files**
+| File                           | Description                                                                 |
 |--------------------------------|-----------------------------------------------------------------------------|
-| `database.csv`                 | Fichier CSV contenant les données des étudiants.                           |
-| `test/test.js`                 | Tests pour valider le bon fonctionnement du projet.                        |
+| `database.csv`                 | CSV file containing student data.                                           |
+| `test/test.js`                 | Tests to validate the functionality of the project.                         |
 
 ---
 
-## Exécution
-### **Exécuter un fichier spécifique**
-Pour exécuter un fichier spécifique, utilisez la commande suivante :
+## Execution
+### **Run a Specific File**
+To execute a specific file, use the following command:
 ```bash
-node <nom-du-fichier>.js
+node <file-name>.js
 ```
 
-Exemple :
+Example:
 ```bash
 node 0-console.js
 ```
 
-### **Lancer le serveur Express**
-Pour lancer le serveur Express dans le dossier `full_server/` :
-1. Accédez au dossier `Node_JS_basic` :
+### **Run the Express Server**
+To run the Express server in the `full_server/` directory:
+1. Navigate to the `Node_JS_basic` folder:
    ```bash
    cd full_server
    ```
-2. Lancez le serveur avec Nodemon :
+2. Start the server with Nodemon:
    ```bash
    npm run dev
    ```
-3. Accédez au serveur à l'adresse suivante :
+3. Access the server at the following address:
    ```
    http://localhost:1245
    ```
 
 ---
 
-## Auteur
+## Author
 Lucas Boyadjian
 
 ---
+```

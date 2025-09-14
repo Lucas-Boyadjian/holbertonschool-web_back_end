@@ -1,172 +1,171 @@
 # Holberton School - Web Back-End
 
-Ce dépôt contient plusieurs projets liés au développement back-end, couvrant des concepts tels que Node.js, ES6, NoSQL, pagination, et programmation asynchrone en Python.
+This repository contains several projects related to back-end development, covering concepts such as Node.js, ES6, NoSQL, pagination, and asynchronous programming in Python.
 
 ---
 
-## Table des matières
-- Dossiers
-  - ES6 Basics
-  - ES6 Classes
-  - ES6 Data Manipulation
-  - ES6 Promises
-  - Node.js Basics
-  - NoSQL
-  - Pagination
-  - Python Async Comprehension
-  - Python Async Function
-- Auteur
+## Table of Contents
+- [Folders](#folders)
+  - [ES6 Basics](#es6-basics)
+  - [ES6 Classes](#es6-classes)
+  - [ES6 Data Manipulation](#es6-data-manipulation)
+  - [ES6 Promises](#es6-promises)
+  - [Node.js Basics](#nodejs-basics)
+  - [NoSQL](#nosql)
+  - [Pagination](#pagination)
+  - [Python Async Comprehension](#python-async-comprehension)
+  - [Python Async Function](#python-async-function)
+- [Author](#author)
 
 ---
 
-## Dossiers
+## Folders
 
 ### **ES6 Basics**
-Ce projet couvre les bases d'ES6, une version moderne de JavaScript. Vous apprendrez à utiliser des fonctionnalités telles que les constantes, les variables à portée de bloc, les fonctions fléchées, les paramètres par défaut, et bien plus.
+This project covers the basics of ES6, a modern version of JavaScript. You will learn to use features such as constants, block-scoped variables, arrow functions, default parameters, and more.
 
-#### **Structure :**
-- **Fichiers principaux :**
-  - `0-constants.js` : Utilisation des constantes avec `const`.
-  - `1-block-scoped.js` : Variables à portée de bloc avec `let`.
-  - `2-arrow.js` : Introduction aux fonctions fléchées.
-  - `3-default-parameter.js` : Paramètres par défaut dans les fonctions.
-  - `4-rest-parameter.js` : Utilisation de l'opérateur rest (`...`).
-  - `5-spread-operator.js` : Utilisation de l'opérateur spread (`...`).
-  - `6-string-interpolation.js` : Interpolation de chaînes avec les templates literals.
-  - `7-getBudgetObject.js` : Création d'objets modernes.
-  - `8-getBudgetCurrentYear.js` : Propriétés dynamiques dans les objets.
-  - `9-getFullBudget.js` : Combinaison d'objets.
-  - `10-loops.js` : Boucles modernes comme `for...of`.
-  - `11-createEmployeesObject.js` : Création d'objets pour représenter des employés.
-  - `12-createReportObject.js` : Création d'objets imbriqués pour des rapports.
+#### **Structure:**
+- **Main Files:**
+  - `0-constants.js`: Using constants with `const`.
+  - `1-block-scoped.js`: Block-scoped variables with `let`.
+  - `2-arrow.js`: Introduction to arrow functions.
+  - `3-default-parameter.js`: Default parameters in functions.
+  - `4-rest-parameter.js`: Using the rest operator (`...`).
+  - `5-spread-operator.js`: Using the spread operator (`...`).
+  - `6-string-interpolation.js`: String interpolation with template literals.
+  - `7-getBudgetObject.js`: Creating modern objects.
+  - `8-getBudgetCurrentYear.js`: Dynamic properties in objects.
+  - `9-getFullBudget.js`: Combining objects.
+  - `10-loops.js`: Modern loops like `for...of`.
+  - `11-createEmployeesObject.js`: Creating objects to represent employees.
+  - `12-createReportObject.js`: Creating nested objects for reports.
 
 ---
 
 ### **ES6 Classes**
-Ce projet explore les classes en JavaScript, introduites avec ES6. Vous apprendrez à créer des classes, des constructeurs, des méthodes, des propriétés statiques, et à utiliser l'héritage.
+This project explores classes in JavaScript, introduced with ES6. You will learn to create classes, constructors, methods, static properties, and use inheritance.
 
-#### **Structure :**
-- **Fichiers principaux :**
-  - `0-classroom.js` : Classe `ClassRoom` avec un constructeur simple.
-  - `1-make_classrooms.js` : Création de plusieurs instances de `ClassRoom`.
-  - `2-hbtn_course.js` : Classe `HolbertonCourse` avec des validations.
-  - `3-currency.js` : Classe `Currency` pour gérer les devises.
-  - `4-pricing.js` : Classe `Pricing` utilisant la composition avec `Currency`.
-  - `5-building.js` : Classe abstraite `Building`.
-  - `6-sky_high.js` : Sous-classe `SkyHighBuilding` héritant de `Building`.
-  - `7-airport.js` : Classe `Airport` avec une méthode `toString`.
-  - `8-hbtn_class.js` : Classe `HolbertonClass` avec des propriétés dynamiques.
-  - `9-hoisting.js` : Explication du hoisting avec les classes.
-  - `10-car.js` : Classe `Car` avec des propriétés avancées.
+#### **Structure:**
+- **Main Files:**
+  - `0-classroom.js`: Class `ClassRoom` with a simple constructor.
+  - `1-make_classrooms.js`: Creating multiple instances of `ClassRoom`.
+  - `2-hbtn_course.js`: Class `HolbertonCourse` with validations.
+  - `3-currency.js`: Class `Currency` to manage currencies.
+  - `4-pricing.js`: Class `Pricing` using composition with `Currency`.
+  - `5-building.js`: Abstract class `Building`.
+  - `6-sky_high.js`: Subclass `SkyHighBuilding` inheriting from `Building`.
+  - `7-airport.js`: Class `Airport` with a `toString` method.
+  - `8-hbtn_class.js`: Class `HolbertonClass` with dynamic properties.
+  - `9-hoisting.js`: Explanation of hoisting with classes.
+  - `10-car.js`: Class `Car` with advanced properties.
 
 ---
 
 ### **ES6 Data Manipulation**
-Ce projet se concentre sur la manipulation de données en JavaScript avec ES6. Vous apprendrez à utiliser des tableaux, des objets, des ensembles (`Set`), et des tableaux typés (`TypedArray`).
+This project focuses on data manipulation in JavaScript using ES6. You will learn to work with arrays, objects, sets (`Set`), and typed arrays (`TypedArray`).
 
-#### **Structure :**
-- **Fichiers principaux :**
-  - `0-get_list_students.js` : Liste d'objets représentant des étudiants.
-  - `1-get_list_student_ids.js` : Extraction des IDs des étudiants.
-  - `2-get_students_by_loc.js` : Filtrage des étudiants par localisation.
-  - `3-get_ids_sum.js` : Calcul de la somme des IDs.
-  - `4-update_grade_by_city.js` : Mise à jour des notes par ville.
-  - `5-typed_arrays.js` : Utilisation des tableaux typés.
-  - `6-set.js` : Introduction aux ensembles (`Set`).
-  - `7-has_array_values.js` : Vérification des valeurs dans un tableau.
-  - `8-clean_set.js` : Nettoyage d'un ensemble.
-  - `9-groceries_list.js` : Liste de courses avec un `Map`.
-  - `10-update_uniq_items.js` : Mise à jour des valeurs dans un `Map`.
+#### **Structure:**
+- **Main Files:**
+  - `0-get_list_students.js`: List of objects representing students.
+  - `1-get_list_student_ids.js`: Extracting student IDs.
+  - `2-get_students_by_loc.js`: Filtering students by location.
+  - `3-get_ids_sum.js`: Calculating the sum of IDs.
+  - `4-update_grade_by_city.js`: Updating grades by city.
+  - `5-typed_arrays.js`: Using typed arrays.
+  - `6-set.js`: Introduction to sets (`Set`).
+  - `7-has_array_values.js`: Checking values in an array.
+  - `8-clean_set.js`: Cleaning a set.
+  - `9-groceries_list.js`: Grocery list with a `Map`.
+  - `10-update_uniq_items.js`: Updating values in a `Map`.
 
 ---
 
 ### **ES6 Promises**
-Ce projet vous initie aux Promises en JavaScript pour gérer les opérations asynchrones.
+This project introduces you to Promises in JavaScript to handle asynchronous operations.
 
-#### **Structure :**
-- **Fichiers principaux :**
-  - `0-promise.js` : Création d'une Promise simple.
-  - `1-promise.js` : Promise conditionnelle.
-  - `2-then.js` : Utilisation de `.then()` pour chaîner des opérations.
-  - `3-all.js` : Utilisation de `Promise.all`.
-  - `4-user-promise.js` : Promise simulant un utilisateur.
-  - `5-photo-reject.js` : Promise qui rejette avec une erreur.
-  - `6-final-user.js` : Utilisation de `Promise.allSettled`.
-  - `7-load_balancer.js` : Utilisation de `Promise.race`.
-  - `8-try.js` : Gestion des erreurs avec `try/catch`.
-  - `100-await.js` : Utilisation de `async/await`.
+#### **Structure:**
+- **Main Files:**
+  - `0-promise.js`: Creating a simple Promise.
+  - `1-promise.js`: Conditional Promise.
+  - `2-then.js`: Using `.then()` to chain operations.
+  - `3-all.js`: Using `Promise.all`.
+  - `4-user-promise.js`: Promise simulating a user.
+  - `5-photo-reject.js`: Promise that rejects with an error.
+  - `6-final-user.js`: Using `Promise.allSettled`.
+  - `7-load_balancer.js`: Using `Promise.race`.
+  - `8-try.js`: Error handling with `try/catch`.
+  - `100-await.js`: Using `async/await`.
 
 ---
 
 ### **Node.js Basics**
-Ce projet couvre les bases de Node.js, y compris la création de serveurs HTTP et l'utilisation de modules.
+This project covers the basics of Node.js, including creating HTTP servers and using modules.
 
-#### **Structure :**
-- **Fichiers principaux :**
-  - `0-console.js` : Affichage dans la console.
-  - `1-stdin.js` : Lecture de l'entrée utilisateur.
-  - `2-read_file.js` : Lecture synchrone d'un fichier.
-  - `3-read_file_async.js` : Lecture asynchrone d'un fichier.
-  - `4-http.js` : Serveur HTTP simple.
-  - `5-http.js` : Serveur HTTP avec des routes.
-  - `6-http_express.js` : Serveur HTTP avec Express.js.
-  - `7-http_express.js` : Serveur Express avec des routes dynamiques.
+#### **Structure:**
+- **Main Files:**
+  - `0-console.js`: Displaying messages in the console.
+  - `1-stdin.js`: Reading user input.
+  - `2-read_file.js`: Synchronous file reading.
+  - `3-read_file_async.js`: Asynchronous file reading.
+  - `4-http.js`: Simple HTTP server.
+  - `5-http.js`: HTTP server with routes.
+  - `6-http_express.js`: HTTP server with Express.js.
+  - `7-http_express.js`: Express server with dynamic routes.
 
 ---
 
 ### **NoSQL**
-Ce projet vous initie aux bases de données NoSQL, en particulier MongoDB.
+This project introduces you to NoSQL databases, particularly MongoDB.
 
-#### **Structure :**
-- **Fichiers principaux :**
-  - `0-list_databases` : Lister les bases de données.
-  - `1-use_or_create_database` : Utiliser ou créer une base de données.
-  - `2-insert` : Insérer des documents.
-  - `3-all` : Récupérer tous les documents.
-  - `4-match` : Filtrer les documents.
-  - `5-count` : Compter les documents.
-  - `6-update` : Mettre à jour des documents.
-  - `7-delete` : Supprimer des documents.
-  - `12-log_stats.py` : Analyser les logs dans MongoDB.
+#### **Structure:**
+- **Main Files:**
+  - `0-list_databases`: Listing databases.
+  - `1-use_or_create_database`: Using or creating a database.
+  - `2-insert`: Inserting documents.
+  - `3-all`: Retrieving all documents.
+  - `4-match`: Filtering documents.
+  - `5-count`: Counting documents.
+  - `6-update`: Updating documents.
+  - `7-delete`: Deleting documents.
+  - `12-log_stats.py`: Analyzing logs in MongoDB.
 
 ---
 
 ### **Pagination**
-Ce projet vous apprend à implémenter des techniques de pagination en Python.
+This project teaches you how to implement pagination techniques in Python.
 
-#### **Structure :**
-- **Fichiers principaux :**
-  - `0-simple_helper_function.py` : Calcul des index de pagination.
-  - `1-simple_pagination.py` : Pagination simple.
-  - `2-hypermedia_pagination.py` : Pagination avec métadonnées hypermédia.
-  - `3-hypermedia_del_pagination.py` : Gestion des suppressions dans la pagination.
+#### **Structure:**
+- **Main Files:**
+  - `0-simple_helper_function.py`: Calculating pagination indices.
+  - `1-simple_pagination.py`: Simple pagination.
+  - `2-hypermedia_pagination.py`: Pagination with hypermedia metadata.
+  - `3-hypermedia_del_pagination.py`: Handling deletions in pagination.
 
 ---
 
 ### **Python Async Comprehension**
-Ce projet explore les générateurs et compréhensions asynchrones en Python.
+This project explores asynchronous generators and comprehensions in Python.
 
-#### **Structure :**
-- **Fichiers principaux :**
-  - `0-async_generator.py` : Générateur asynchrone.
-  - `1-async_comprehension.py` : Compréhension asynchrone.
-  - `2-measure_runtime.py` : Mesure des performances des tâches asynchrones.
+#### **Structure:**
+- **Main Files:**
+  - `0-async_generator.py`: Asynchronous generator.
+  - `1-async_comprehension.py`: Asynchronous comprehension.
+  - `2-measure_runtime.py`: Measuring runtime of asynchronous tasks.
 
 ---
 
 ### **Python Async Function**
-Ce projet couvre les bases des fonctions asynchrones en Python.
+This project covers the basics of asynchronous functions in Python.
 
-#### **Structure :**
-- **Fichiers principaux :**
-  - `0-basic_async_syntax.py` : Fonction asynchrone simple.
-  - `1-concurrent_coroutines.py` : Coroutines concurrentes.
-  - `2-measure_runtime.py` : Mesure des performances.
-  - `3-tasks.py` : Gestion des tâches avec `asyncio.create_task`.
+#### **Structure:**
+- **Main Files:**
+  - `0-basic_async_syntax.py`: Basic asynchronous function.
+  - `1-concurrent_coroutines.py`: Concurrent coroutines.
+  - `2-measure_runtime.py`: Measuring runtime.
+  - `3-tasks.py`: Managing tasks with `asyncio.create_task`.
 
 ---
 
-## Auteur
+## Author
 Lucas Boyadjian
-
----
+```

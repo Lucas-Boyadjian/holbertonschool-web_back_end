@@ -1,93 +1,94 @@
 # ES6 Basics
 
 ## Description
-Ce projet a pour objectif de vous familiariser avec les fonctionnalités de base d'ECMAScript 6 (ES6), une version moderne de JavaScript. Vous apprendrez à utiliser des concepts tels que les constantes, les variables à portée de bloc, les fonctions fléchées, les paramètres par défaut, les opérateurs rest et spread, et bien plus encore.
+This project aims to familiarize you with the basic features of ECMAScript 6 (ES6), a modern version of JavaScript. You will learn to use concepts such as constants, block-scoped variables, arrow functions, default parameters, rest and spread operators, and much more.
 
 ---
 
-## Table des matières
+## Table of Contents
 - [Description](#description)
-- [Prérequis](#prérequis)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Fonctionnalités](#fonctionnalités)
-- [Fichiers](#fichiers)
-- [Exécution](#exécution)
-- [Auteur](#auteur)
+- [Features](#features)
+- [Files](#files)
+- [Execution](#execution)
+- [Author](#author)
 
 ---
 
-## Prérequis
-Avant de commencer, assurez-vous d'avoir les outils suivants installés :
-- **Node.js** (version 20.x.x ou supérieure)
-- **npm** (version 9.x.x ou supérieure)
-- Un éditeur de texte tel que **Visual Studio Code**
+## Prerequisites
+Before starting, make sure you have the following tools installed:
+- **Node.js** (version 20.x.x or higher)
+- **npm** (version 9.x.x or higher)
+- A text editor such as **Visual Studio Code**
 
 ---
 
 ## Installation
-1. Clonez ce dépôt sur votre machine locale :
+1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/<votre-utilisateur>/holbertonschool-web_back_end.git
+   git clone https://github.com/<your-username>/holbertonschool-web_back_end.git
    ```
-2. Accédez au dossier du projet :
+2. Navigate to the project folder:
    ```bash
    cd holbertonschool-web_back_end/ES6_basic
    ```
-3. Installez les dépendances nécessaires :
+3. Install the required dependencies:
    ```bash
    npm install
    ```
 
 ---
 
-## Fonctionnalités
-Ce projet couvre les concepts suivants :
-1. **Constantes et variables à portée de bloc** (`const`, `let`)
-2. **Fonctions fléchées** (`=>`)
-3. **Paramètres par défaut pour les fonctions**
-4. **Opérateur rest (`...`)** pour collecter des arguments
-5. **Opérateur spread (`...`)** pour décomposer des tableaux ou objets
-6. **Interpolation de chaînes de caractères** (template literals)
-7. **Création d'objets et méthodes ES6**
-8. **Boucles et itérations modernes**
-9. **Modules ES6** (`import` et `export`)
+## Features
+This project covers the following concepts:
+1. **Constants and block-scoped variables** (`const`, `let`)
+2. **Arrow functions** (`=>`)
+3. **Default parameters for functions**
+4. **Rest operator (`...`)** to collect arguments
+5. **Spread operator (`...`)** to expand arrays or objects
+6. **String interpolation** (template literals)
+7. **Object creation and ES6 methods**
+8. **Modern loops and iterations**
+9. **ES6 Modules** (`import` and `export`)
 
 ---
 
-## Fichiers
-Voici une description des fichiers principaux du projet :
+## Files
+Here is a description of the main files in the project:
 
-| Fichier                        | Description                                                                 |
+| File                           | Description                                                                 |
 |--------------------------------|-----------------------------------------------------------------------------|
-| `0-constants.js`               | Utilisation des constantes avec `const`.                                    |
-| `1-block-scoped.js`            | Démonstration de l'utilisation de `let` pour les variables à portée de bloc. |
-| `2-arrow.js`                   | Introduction aux fonctions fléchées.                                       |
-| `3-default-parameter.js`       | Utilisation des paramètres par défaut dans les fonctions.                   |
-| `4-rest-parameter.js`          | Utilisation de l'opérateur rest pour collecter des arguments.               |
-| `5-spread-operator.js`         | Utilisation de l'opérateur spread pour décomposer des tableaux/objets.      |
-| `6-string-interpolation.js`    | Utilisation des templates literals pour l'interpolation de chaînes.         |
-| `7-getBudgetObject.js`         | Création d'objets avec des méthodes modernes.                               |
-| `8-getBudgetCurrentYear.js`    | Utilisation des propriétés dynamiques dans les objets.                      |
-| `9-getFullBudget.js`           | Combinaison d'objets avec des méthodes modernes.                            |
-| `10-loops.js`                  | Utilisation des boucles modernes comme `for...of`.                         |
-| `11-createEmployeesObject.js`  | Création d'objets pour représenter des employés.                           |
-| `12-createReportObject.js`     | Création d'objets imbriqués pour des rapports.                             |
+| `0-constants.js`               | Using constants with `const`.                                               |
+| `1-block-scoped.js`            | Demonstrating the use of `let` for block-scoped variables.                  |
+| `2-arrow.js`                   | Introduction to arrow functions.                                           |
+| `3-default-parameter.js`       | Using default parameters in functions.                                     |
+| `4-rest-parameter.js`          | Using the rest operator to collect arguments.                              |
+| `5-spread-operator.js`         | Using the spread operator to expand arrays/objects.                        |
+| `6-string-interpolation.js`    | Using template literals for string interpolation.                          |
+| `7-getBudgetObject.js`         | Creating objects with modern methods.                                      |
+| `8-getBudgetCurrentYear.js`    | Using dynamic properties in objects.                                       |
+| `9-getFullBudget.js`           | Combining objects with modern methods.                                     |
+| `10-loops.js`                  | Using modern loops like `for...of`.                                        |
+| `11-createEmployeesObject.js`  | Creating objects to represent employees.                                   |
+| `12-createReportObject.js`     | Creating nested objects for reports.                                       |
 
 ---
 
-## Exécution
-Pour exécuter un fichier spécifique, utilisez la commande suivante :
+## Execution
+To execute a specific file, use the following command:
 ```bash
-node <nom-du-fichier>.js
+node <file-name>.js
 ```
 
-Exemple :
+Example:
 ```bash
 node 0-constants.js
 ```
 
 ---
 
-## Auteur
+## Author
 Lucas Boyadian
 ---
+```

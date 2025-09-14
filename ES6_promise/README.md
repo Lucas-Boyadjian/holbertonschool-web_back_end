@@ -1,91 +1,92 @@
 # ES6 Promises
 
 ## Description
-Ce projet a pour objectif de vous apprendre à utiliser les Promises en JavaScript, introduites avec ES6. Les Promises permettent de gérer des opérations asynchrones de manière plus lisible et structurée. Vous apprendrez à créer, utiliser et combiner des Promises, ainsi qu'à gérer les erreurs dans des flux asynchrones.
+This project aims to teach you how to use Promises in JavaScript, introduced with ES6. Promises allow you to handle asynchronous operations in a more readable and structured way. You will learn how to create, use, and combine Promises, as well as handle errors in asynchronous flows.
 
 ---
 
-## Table des matières
+## Table of Contents
 - [Description](#description)
-- [Prérequis](#prérequis)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Fonctionnalités](#fonctionnalités)
-- [Fichiers](#fichiers)
-- [Exécution](#exécution)
-- [Auteur](#auteur)
+- [Features](#features)
+- [Files](#files)
+- [Execution](#execution)
+- [Author](#author)
 
 ---
 
-## Prérequis
-Avant de commencer, assurez-vous d'avoir les outils suivants installés :
-- **Node.js** (version 20.x.x ou supérieure)
-- **npm** (version 9.x.x ou supérieure)
-- Un éditeur de texte tel que **Visual Studio Code**
+## Prerequisites
+Before starting, make sure you have the following tools installed:
+- **Node.js** (version 20.x.x or higher)
+- **npm** (version 9.x.x or higher)
+- A text editor such as **Visual Studio Code**
 
 ---
 
 ## Installation
-1. Clonez ce dépôt sur votre machine locale :
+1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/<votre-utilisateur>/holbertonschool-web_back_end.git
+   git clone https://github.com/<your-username>/holbertonschool-web_back_end.git
    ```
-2. Accédez au dossier du projet :
+2. Navigate to the project folder:
    ```bash
    cd holbertonschool-web_back_end/ES6_promise
    ```
-3. Installez les dépendances nécessaires :
+3. Install the required dependencies:
    ```bash
    npm install
    ```
 
 ---
 
-## Fonctionnalités
-Ce projet couvre les concepts suivants :
-1. **Création de Promises** avec `new Promise`.
-2. **Utilisation de `.then()`** pour chaîner des opérations.
-3. **Gestion des erreurs** avec `.catch()`.
-4. **Combinaison de Promises** avec `Promise.all` et `Promise.race`.
-5. **Utilisation de `async/await`** pour simplifier le code asynchrone.
-6. **Gestion des erreurs dans les fonctions asynchrones**.
-7. **Utilisation avancée des Promises** pour des cas complexes.
+## Features
+This project covers the following concepts:
+1. **Creating Promises** with `new Promise`.
+2. **Using `.then()`** to chain operations.
+3. **Error handling** with `.catch()`.
+4. **Combining Promises** with `Promise.all` and `Promise.race`.
+5. **Using `async/await`** to simplify asynchronous code.
+6. **Error handling in asynchronous functions**.
+7. **Advanced use of Promises** for complex cases.
 
 ---
 
-## Fichiers
-Voici une description des fichiers principaux du projet :
+## Files
+Here is a description of the main files in the project:
 
-| Fichier                        | Description                                                                 |
+| File                           | Description                                                                 |
 |--------------------------------|-----------------------------------------------------------------------------|
-| `0-promise.js`                 | Création d'une Promise simple.                                              |
-| `1-promise.js`                 | Promise qui se résout ou se rejette en fonction d'une condition.            |
-| `2-then.js`                    | Utilisation de `.then()` pour chaîner des opérations.                       |
-| `3-all.js`                     | Utilisation de `Promise.all` pour exécuter plusieurs Promises en parallèle. |
-| `4-user-promise.js`            | Création d'une Promise pour simuler un utilisateur.                         |
-| `5-photo-reject.js`            | Promise qui rejette avec une erreur.                                        |
-| `6-final-user.js`              | Gestion de plusieurs Promises avec `Promise.allSettled`.                    |
-| `7-load_balancer.js`           | Utilisation de `Promise.race` pour retourner la première Promise résolue.   |
-| `8-try.js`                     | Gestion des erreurs avec `try/catch` dans une fonction asynchrone.          |
-| `9-try.js`                     | Utilisation avancée de `try/catch` pour gérer les erreurs.                  |
-| `100-await.js`                 | Utilisation de `async/await` pour simplifier le code asynchrone.            |
-| `utils.js`                     | Contient des fonctions utilitaires pour les Promises.                      |
+| `0-promise.js`                 | Creates a simple Promise.                                                   |
+| `1-promise.js`                 | A Promise that resolves or rejects based on a condition.                   |
+| `2-then.js`                    | Uses `.then()` to chain operations.                                         |
+| `3-all.js`                     | Uses `Promise.all` to execute multiple Promises in parallel.                |
+| `4-user-promise.js`            | Creates a Promise to simulate a user.                                       |
+| `5-photo-reject.js`            | A Promise that rejects with an error.                                       |
+| `6-final-user.js`              | Handles multiple Promises with `Promise.allSettled`.                        |
+| `7-load_balancer.js`           | Uses `Promise.race` to return the first resolved Promise.                   |
+| `8-try.js`                     | Handles errors with `try/catch` in an asynchronous function.                |
+| `9-try.js`                     | Advanced use of `try/catch` for error handling.                             |
+| `100-await.js`                 | Uses `async/await` to simplify asynchronous code.                           |
+| `utils.js`                     | Contains utility functions for Promises.                                    |
 
 ---
 
-## Exécution
-Pour exécuter un fichier spécifique, utilisez la commande suivante :
+## Execution
+To execute a specific file, use the following command:
 ```bash
-node <nom-du-fichier>.js
+node <file-name>.js
 ```
 
-Exemple :
+Example:
 ```bash
 node 0-main.js
 ```
 
 ---
 
-## Auteur
+## Author
 Lucas Boyadjian
 
 ---
+```
